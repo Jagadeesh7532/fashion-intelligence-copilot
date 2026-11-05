@@ -1,12 +1,14 @@
 # 🛍 Fashion Intelligence Copilot
 
-## Live Demo
+## 🌐 Live Demo
 
-**Streamlit Application:**  
-(https://fashion-intelligence-copilot-bwvwrbjuqy9bmrvrupqg3t.streamlit.app/)
+### Streamlit Application
 
-**GitHub Repository:**  
-https://github.com/jagadeesh7532/fashion-intelligence-copilot
+👉 https://fashion-intelligence-copilot-bwvwrbjuqy9bmrvrupqg3t.streamlit.app/
+
+### GitHub Repository
+
+👉 https://github.com/Jagadeesh7532/fashion-intelligence-copilot
 
 ---
 
@@ -16,7 +18,22 @@ Fashion Intelligence Copilot is an AI-powered retail analytics and decision-supp
 
 The platform transforms raw inventory and sales data into actionable business insights through analytics dashboards, recommendation engines, and a conversational AI assistant.
 
-The goal is to help retail managers make informed decisions related to inventory management, revenue optimization, branch performance, and festive season planning.
+The goal is to help retail managers make informed decisions related to inventory management, revenue optimization, branch performance, sales analysis, and festive demand planning.
+
+---
+
+# Objectives
+
+This platform helps fashion retailers to:
+
+- Monitor inventory levels
+- Identify low-stock products
+- Analyze sales performance
+- Compare branch performance
+- Generate reorder recommendations
+- Detect slow-moving inventory
+- Answer business questions using natural language
+- Support better retail decision-making
 
 ---
 
@@ -26,7 +43,7 @@ The goal is to help retail managers make informed decisions related to inventory
 
 - Total Product Tracking
 - Stock Quantity Monitoring
-- Inventory Valuation
+- Inventory Value Calculation
 - Low Stock Detection
 - Branch-wise Inventory Visibility
 
@@ -35,14 +52,14 @@ The goal is to help retail managers make informed decisions related to inventory
 - Total Revenue Analysis
 - October Revenue Analysis
 - Order Volume Tracking
-- Business Performance Insights
+- Revenue Performance Insights
 
 ## 🏆 Sales Intelligence
 
 - Best Selling Products
 - Product Demand Analysis
 - Branch Performance Comparison
-- Sales Trend Monitoring
+- Category Revenue Analysis
 
 ## 🚚 Recommendation Engine
 
@@ -50,10 +67,11 @@ The goal is to help retail managers make informed decisions related to inventory
 - Inventory Prioritization
 - Discount Recommendations
 - Inventory Risk Identification
+- Festive Readiness Planning
 
 ## 🤖 AI Business Assistant
 
-Users can ask:
+Natural Language Queries:
 
 ```text
 best sellers
@@ -69,84 +87,84 @@ branch comparison
 reorder recommendations
 ```
 
-The assistant converts analytics into business-friendly insights.
+The AI assistant transforms business analytics into actionable recommendations for store owners.
 
 ---
 
 # Challenge Deliverables
 
-## Part A Features
+## ✅ Part A Features
 
-✅ Retrieve inventory by branch or overall
+- Retrieve inventory by branch or overall
+- Identify low-stock products
+- Find best-selling products
+- Search products by category and price
+- Generate inventory summaries
 
-✅ Low stock detection
+## ✅ Part B Business Questions
 
-✅ Best-selling products
-
-✅ Product search
-
-✅ Inventory summary
-
-## Part B Business Questions
-
-✅ Reorder recommendations before Diwali
-
-✅ Products suitable for discounting
-
-✅ Saree sales comparison between branches
-
-✅ October revenue and top category analysis
-
-✅ Non-existent product validation (TZ-999)
+- Reorder recommendations before Diwali
+- Discount recommendations for slow-moving inventory
+- Saree sales comparison between branches
+- October revenue and top-performing category analysis
+- Non-existent product validation (TZ-999)
 
 ---
 
 # Business Questions Addressed
 
-## 1. Which products should be reordered before Diwali?
+## 1️⃣ Which Products Should Be Reordered Before Diwali?
 
 The recommendation engine combines:
 
 - Current Stock
 - Reorder Threshold
-- October Demand
+- October Demand Trends
 
-Top recommendations:
+Top Recommendations:
 
-| Product | Branch | Suggested Reorder |
+| Product | Branch | Recommended Quantity |
 |----------|----------|----------:|
 | TZ-106 Haldi Special Kota Saree | Branch 1 | 142 |
 | TZ-106 Haldi Special Kota Saree | Branch 2 | 143 |
 | TZ-112 Classic Cotton Kurta | Branch 1 | 105 |
 | TZ-112 Classic Cotton Kurta | Branch 2 | 112 |
 
+Business Insight:
+
+Products with strong October demand and low inventory are prioritized for replenishment before festive sales.
+
 ---
 
-## 2. Which products should be discounted?
+## 2️⃣ Which Products Should Be Discounted?
 
-Products with high inventory and low sales:
+Products identified with high stock and low sales:
 
 - Navy Nehru Jacket Set
 - Sky Blue Sequin Saree
 - Maroon Velvet Kurta Set
 - Bandhani Cotton Saree
 
-These products represent inventory with low turnover.
+Business Insight:
+
+These items represent slow-moving inventory and may benefit from discounting to improve stock turnover.
 
 ---
 
-## 3. Compare Saree Sales Between Branches
+## 3️⃣ Compare Saree Sales Between Branches
 
 | Branch | Saree Units Sold |
 |----------|----------:|
 | Branch 1 | 215 |
 | Branch 2 | 347 |
 
+Business Insight:
+
 Branch 2 outperformed Branch 1 in saree sales during October.
 
 ---
 
-## 4. October Revenue Performance
+## 4️⃣ October Revenue Performance
 
 | Metric | Value |
 |----------|---------:|
@@ -162,9 +180,13 @@ Revenue Contribution:
 
 **₹17,77,831**
 
+Business Insight:
+
+Sarees contributed the highest revenue share during October and represent the strongest-performing category.
+
 ---
 
-## 5. Product Validation
+## 5️⃣ Product Validation
 
 Query:
 
@@ -178,7 +200,9 @@ Response:
 Product TZ-999 does not exist in inventory.
 ```
 
-The system avoids hallucinations and never invents inventory data.
+Business Insight:
+
+The system avoids hallucinations and only responds with verified inventory information.
 
 ---
 
@@ -186,28 +210,28 @@ The system avoids hallucinations and never invents inventory data.
 
 ```text
 User
-│
-▼
+ │
+ ▼
 
 Streamlit Dashboard
-│
-▼
+ │
+ ▼
 
 AI Business Assistant
-│
-▼
+ │
+ ▼
 
 Tool Router
-│
-├── Inventory Analytics
-│
-├── Revenue Analytics
-│
-├── Sales Intelligence
-│
-└── Recommendation Engine
-│
-▼
+ │
+ ├── Inventory Analytics
+ │
+ ├── Revenue Analytics
+ │
+ ├── Sales Intelligence
+ │
+ └── Recommendation Engine
+ │
+ ▼
 
 CSV Data Sources
 ```
@@ -217,7 +241,7 @@ CSV Data Sources
 # Project Structure
 
 ```text
-fashion-copilot/
+fashion-intelligence-copilot/
 │
 ├── app.py
 ├── agent.py
@@ -229,16 +253,17 @@ fashion-copilot/
 │   └── sales.csv
 │
 ├── screenshots/
-│   ├── dashboard.png
-│   ├── revenue_analytics.png
-│   ├── best_sellers.png
-│   ├── reorder_recommendations.png
-│   ├── ai_total_revenue.png
-│   ├── ai_best_sellers.png
-│   └── ai_reorder_recommendations.png
+│   ├── Dashboard.png
+│   ├── revenue analytics.png
+│   ├── best sellers.png
+│   ├── reorder recommendations.png
+│   ├── ai total revenue.png
+│   ├── ai best sellers.png
+│   └── ai reorder recommendations.png
 │
 ├── README.md
 ├── requirements.txt
+├── .gitignore
 └── .env
 ```
 
@@ -254,14 +279,17 @@ fashion-copilot/
 - Handled Missing Prices
 - Filled Missing Stock Values
 - Parsed Restock Dates
+- Standardized Category Names
 
 ## Sales Dataset
 
 - Fixed Mixed Date Formats
 - Cleaned Unit Prices
 - Filled Missing Discounts
+- Filled Missing Quantities
 - Converted Numeric Fields
 - Standardized Product IDs
+- Handled Missing Values
 
 ---
 
@@ -269,43 +297,57 @@ fashion-copilot/
 
 ## 📊 Executive Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+Displays inventory value, revenue metrics, stock levels, top-selling products, and executive insights.
+
+![Dashboard](screenshots/Dashboard.png)
 
 ---
 
 ## 💰 Revenue Analytics
 
-![Revenue Analytics](screenshots/revenue_analytics.png)
+Provides total revenue, total orders, and October revenue insights.
+
+![Revenue Analytics](screenshots/revenue%20analytics.png)
 
 ---
 
 ## 🏆 Best Sellers Analysis
 
-![Best Sellers](screenshots/best_sellers.png)
+Highlights top-performing products based on sales volume.
+
+![Best Sellers](screenshots/best%20sellers.png)
 
 ---
 
 ## 🚚 Diwali Reorder Recommendations
 
-![Reorder Recommendations](screenshots/reorder_recommendations.png)
+Identifies products requiring replenishment before festive demand.
+
+![Reorder Recommendations](screenshots/reorder%20recommendations.png)
 
 ---
 
 ## 🤖 AI Assistant – Revenue Analysis
 
-![AI Revenue](screenshots/ai_total_revenue.png)
+Natural-language revenue insights generated from sales data.
+
+![AI Revenue](screenshots/ai%20total%20revenue.png)
 
 ---
 
 ## 🤖 AI Assistant – Best Sellers
 
-![AI Best Sellers](screenshots/ai_best_sellers.png)
+Natural-language best-selling product analysis.
+
+![AI Best Sellers](screenshots/ai%20best%20sellers.png)
 
 ---
 
 ## 🤖 AI Assistant – Reorder Recommendations
 
-![AI Reorder Recommendations](screenshots/ai_reorder_recommendations.png)
+AI-powered festive inventory planning recommendations.
+
+![AI Reorder](screenshots/ai%20reorder%20recommendations.png)
 
 ---
 
@@ -321,15 +363,28 @@ fashion-copilot/
 
 - Streamlit
 
-## Analytics
+## Analytics Engine
 
-- Business Intelligence Tools
+- Inventory Analytics
+- Revenue Analytics
 - Recommendation Engine
 
 ## AI Components
 
-- Tool Routing Agent
+- Tool Router
 - Conversational Business Assistant
+
+---
+
+# Deployment
+
+## Streamlit Cloud
+
+The application is deployed using Streamlit Community Cloud.
+
+Live URL:
+
+👉 https://fashion-intelligence-copilot-bwvwrbjuqy9bmrvrupqg3t.streamlit.app/
 
 ---
 
@@ -338,8 +393,9 @@ fashion-copilot/
 ## Clone Repository
 
 ```bash
-git clone <repository-url>
-cd fashion-copilot
+git clone https://github.com/Jagadeesh7532/fashion-intelligence-copilot.git
+
+cd fashion-intelligence-copilot
 ```
 
 ## Install Requirements
@@ -375,14 +431,46 @@ branch comparison
 ```
 
 ```text
+low stock products
+```
+
+```text
 reorder recommendations
 ```
 
 ---
 
+# Evaluation Highlights
+
+This project demonstrates:
+
+✅ Data Cleaning & Preprocessing
+
+✅ Tool-Based Analytics Architecture
+
+✅ Inventory Intelligence
+
+✅ Retail Sales Analytics
+
+✅ Revenue Analysis
+
+✅ Recommendation Engine
+
+✅ Business Question Answering
+
+✅ Conversational AI Assistant
+
+✅ Streamlit Dashboard Development
+
+✅ Git-Based Version Control
+
+✅ Cloud Deployment
+
+---
+
 # AI Usage Disclosure
 
-AI tools were used for:
+AI tools were used during development for:
 
 - Code generation assistance
 - Debugging support
@@ -391,7 +479,7 @@ AI tools were used for:
 
 All generated code was manually reviewed, tested, and modified as required.
 
-Business calculations, recommendations, and analytics outputs were verified using the provided inventory and sales datasets.
+Business logic, revenue calculations, recommendations, and analytic outputs were verified against the provided datasets before submission.
 
 ---
 
@@ -401,9 +489,11 @@ Business calculations, recommendations, and analytics outputs were verified usin
 - Demand Forecasting
 - Inventory Forecasting
 - Sales Prediction
+- Trend Analysis
 - Customer Segmentation
 - Multi-Store Support
 - Automated Reporting
+- Conversational Memory
 
 ---
 
@@ -411,13 +501,6 @@ Business calculations, recommendations, and analytics outputs were verified usin
 
 **Jagadeesh Babu**
 
-B.Tech Information Technology  
-Cybersecurity & AI Enthusiast
+B.Tech s, sales intelligence, recommendation systems, and conversational AI into a unified retail decision-support platform.
 
----
-
-# Conclusion
-
-Fashion Intelligence Copilot combines inventory analytics, sales intelligence, recommendation systems, and conversational AI into a unified retail decision-support platform.
-
-The application helps retailers improve inventory planning, revenue visibility, and operational decision-making through data-driven insights and AI-powered assistance
+The application enables retailers to make data-driven decisions regarding inventory planning, revenue management, product performance, and festive demand forecasting through actionable analytics and AI-powered assistance.
