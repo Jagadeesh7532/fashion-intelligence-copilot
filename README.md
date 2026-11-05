@@ -3,10 +3,10 @@
 ## Live Demo
 
 **Streamlit Application:**  
-https://your-app.streamlit.app
+(https://fashion-intelligence-copilot-bwvwrbjuqy9bmrvrupqg3t.streamlit.app/)
 
 **GitHub Repository:**  
-https://github.com/yourusername/fashion-intelligence-copilot
+https://github.com/jagadeesh7532/fashion-intelligence-copilot
 
 ---
 
